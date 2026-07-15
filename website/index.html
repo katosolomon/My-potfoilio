@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Kato solomon-Full-stack developer, freelance professional Penetration Tester and Ethical hacker.">
+  <meta name="theme-color" content="#2563eb">
+  <meta property="og:title" content="Kato Solomon |  Portfolio">
+  <meta property="og:description" content="Professional Backend Developer and Ethical Hacker.">
+  <meta property="og:type" content="website">
+  <title>Kato solomon online</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+   <head>
+  <!-- Favicon using your logo -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Apple touch icon (iPhone/iPad home screen) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/mypic.png">
+</head>
+</head>
+<body>
+  <div id="app">
+    <!-- Navbar Component -->
+    <navbar-component 
+      :current-page="currentPage"
+      :is-dark-mode="isDarkMode"
+      @navigate="navigateTo"
+      @toggle-theme="toggleTheme"
+    ></navbar-component>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Home Page -->
+      <home-page 
+        v-if="currentPage === 'home'"
+        @navigate="navigateTo"
+      ></home-page>
+
+      <!-- About Page -->
+      <about-page 
+        v-if="currentPage === 'about'"
+      ></about-page>
+
+      <!-- Skills Page -->
+      <skills-page 
+        v-if="currentPage === 'skills'"
+      ></skills-page>
+
+      <!-- Projects Page -->
+      <projects-page 
+        v-if="currentPage === 'projects'"
+      ></projects-page>
+
+      <!-- Achievements Page -->
+      <achievements-page 
+        v-if="currentPage === 'achievements'"
+      ></achievements-page>
+
+      <!-- Resume Page -->
+      <resume-page 
+        v-if="currentPage === 'resume'"
+      ></resume-page>
+
+      <!-- Contact Page -->
+      <contact-page 
+        v-if="currentPage === 'contact'"
+      ></contact-page>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 kato solomon. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Vue 3 CDN -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  
+  <!-- Certificate Data -->
+  <script src="js/data/certificates.json"></script>
+  
+  <!-- Components -->
+  <script src="js/components/Navbar.js"></script>
+  <script src="js/components/HomePage.js"></script>
+  <script src="js/components/AboutPage.js"></script>
+  <script src="js/components/SkillsPage.js"></script>
+  <script src="js/components/ProjectsPage.js"></script>
+  <script src="js/components/AchievementsPage.js"></script>
+  <script src="js/components/ResumePage.js"></script>
+  <script src="js/components/ContactPage.js"></script>
+  
+  <!-- Main App -->
+  <script src="js/app.js"></script>
+</body>
+</html>

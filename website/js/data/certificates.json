@@ -1,0 +1,43 @@
+[
+ {
+  "id": 1,
+  "title": "Uganda Certificate Of  Examination (UCE)",
+  "issuer": "Uganda National Examination Board (UNEB)",
+  "date": "2025",
+  "description": "Successfully completed the Uganda Certificate of Examination, demonstrating proficiency in core secondary school subjects.",
+  "category": "education",
+  "featured": true,
+  "verifyUrl": "#",
+  "credentialId": "UNEB xxxxxx",
+  "skills": [
+    "English Language, ",
+    "Mathematics, ",
+    "Chemisty, ",
+    "Physic, ",
+    "Further Mathematics, ",
+    "Social Studies"
+  ]
+},
+  {
+  "id": 2,
+  "title": "Certificate in Computer Science",
+  "issuer": "YMCA compressive instuite wandeya",
+  "date": "2027",
+  "description": "Successfully completed the Certificate program in Computer Science, gaining strong foundations in software development, computer systems, and information technology.",
+  "category": "education",
+  "featured": true,
+  "verifyUrl": "",
+  "credentialId": "csc/229/may/2026",
+  "skills": [
+    "Computer Programming, ",
+    "Web Development, ",
+    "Database Management, ",
+    "System Analysis, ",
+    "Problem Solving, ",
+    "Information Technology, ",
+    "Hardware Maintaninace, ",
+    "Networking"
+  ]
+}
+  
+]
